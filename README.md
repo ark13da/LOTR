@@ -32,7 +32,7 @@ Wireframe can be found from: https://www.figma.com/file/mg1loDP3Z7XjfF6fC60CL3/R
 
 ## Dependencies and Setup
 
-This is a React App thatw as written with TypeScript and it utilizes Redux for state management.
+This is a React App that was written with TypeScript and it utilizes Redux for state management.
 
 The app was created by NPM using ```npx create-react-app <appName> --template redux-typescript```
 
@@ -60,8 +60,8 @@ The exceptions for above mentioned data flow pattern are 'DeckCards' and 'Single
 A custom hook 'useFetchDeck' was designed send get requests to external server and populate the state with the response. the hook is triggered each time user inputs a new search value that is validated and is dispatched to store. 
 
 ### Events sequence (Flow chart): 
-
-0- The Deck components reads the store state:
+```
+- 0- The Deck components reads the store state:
     0.1- if state has error: displays user comprehensible error
     0.2- if no error: maps the data to DeckCards component and displays the cards
         0.2.1- user clicks on one card: conditional JSX statement is triggered and 'SingleCard' component is displayed with properties of selected card
@@ -72,7 +72,7 @@ A custom hook 'useFetchDeck' was designed send get requests to external server a
 3- 'useFetchDeck' hook is triggered by any change to userInput property of store:
     3.1- if response has error: dispatch error to store ->(back to point 0.1)
     3.1- if no error: dispatch response to store and send additional get requests to remote server for fetching individual hero member information and dispatch to store ->(back to point 0.2)
-
+```
 ### Styling
 
 plain CSS was used for styling the app. each component has its own style file in its directory
