@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# FE task
 
-## Available Scripts
+Familiarize yourself with API documentation at https://ringsdb.com and create a React app in which:
+- the user can fetch decks from the API one at a time with the deck's id,
+- after fetching the deck, present all hero cards from the deck,
+- when user clicks on a card, the user can see the detailed information on the card,
+- in the detailed informations, a modernized version for the card is displayed (a Card element), that should have the values of the card displayed similarly to the picture of the card
 
-In the project directory, you can run:
+Use TypeScript for coding. You can use other libraries you'd prefer and styling can also be done by your preference. We hope that you try to show us your quality standards in the submission.
 
-### `yarn start`
+Wireframe can be found from: https://www.figma.com/file/mg1loDP3Z7XjfF6fC60CL3/RingsDB-Wireframe
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+API general: https://ringsdb.com/api/
+API documentation: https://ringsdb.com/api/doc
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+//dataFilter in effect hook runs before data fetcher has returned
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// tuomo's points
+// organization of the files or project
+// comments are good but not exessive
+// deploy it for them somewhere.
+// debug before
+// lint 
+// few test
+// replace favicos , app headers and descriptions
+// clean files
+// use types corectly
+//
 
-### `yarn build`
+// Oliver
+// storybook stories
+// use esLint and prettier
+// don't commi API keys
+// test critical points
+// explain how to add additoanl tests
+// tests for react and service functions
+// functional testing and component testing of t least one component
+// be ready to explain library choices
+// 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+// Alireza
+// check react typescript app with apis
+// learn the test name and learn iq tests
+// the sungle card does not exist at initiation.
+//register service worker
+// solve as many lighthouse stuff as possible
+// wright analytical opinions of compromises and improvements
