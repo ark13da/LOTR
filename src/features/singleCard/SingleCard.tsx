@@ -16,7 +16,7 @@ const SingleCard = ({
   health,
 }: heroCardprops) => {
   return (
-    <div id="overLay">
+    <div className="overLay">
       <div className="singleCard">
         <div className="singleCardHeader">
           <p className="titleText">{name}</p>
