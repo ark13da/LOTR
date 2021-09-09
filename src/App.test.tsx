@@ -3,7 +3,9 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
 
-  test('render App components title', () => {
+describe('Test App component rendering', () => {
+  
+  it('renders App components title', () => {
     const { getByText } = render(
       <Provider store={store}>
         <App />
@@ -12,3 +14,4 @@ import App from './App';
     expect(getByText(/Lord/i)).toBeInTheDocument();
   });
 
+});
