@@ -15,26 +15,3 @@ describe('Test App component rendering', () => {
   });
 
 });
-
-/*
-describe('UserInput data validation', () => {
-  
-  it('throws an error for non numerical inputs', async () => {
-    render(
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
- jest.setTimeout(30000);
-    const inputElement: any = screen.getByPlaceholderText(/enter the deck id/i);
-    await fireEvent.change(inputElement, { target: { value: "apples" } });
-    await fireEvent.keyDown(inputElement, { key: "Enter", code: "Enter", keyCode:13,
-      charCode: 13
-    });
-   
-    const titleElement = await screen.findByText(/try/i);
-    expect(titleElement).toBeInTheDocument();
-  });
-
-});
-*/
