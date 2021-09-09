@@ -1,6 +1,6 @@
 # ReadMe content:
 
-![The workflow](https://github.com/ark13da/LOTR/actions/workflows/main.yml)
+![The workflow](https://github.com/ark13da/LOTR/actions/workflows/main.yml/badge.svg)
 
 #### Introduction
 #### The task
