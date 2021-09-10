@@ -66,14 +66,16 @@ A custom hook 'useFetchDeck' was designed send get requests to external server a
 - 0- The Deck components reads the store state:
     0.1- if state has error: displays user comprehensible error
     0.2- if no error: maps the data to DeckCards component and displays the cards
-        0.2.1- user clicks on one card: conditional JSX statement is triggered and 'SingleCard' component is displayed with properties of selected card
+        0.2.1- user clicks on one card: conditional JSX statement is triggered and 
+        'SingleCard' component is displayed with properties of selected card
 1- User enters an input in search box (inputElement) and presses 'Enter'
 2- Search component validates the input:
     2.1- if input is invalid: error is dispatched to store
     2.2- if input is valid, search term si dispatched to store
 3- 'useFetchDeck' hook is triggered by any change to userInput property of store:
     3.1- if response has error: dispatch error to store ->(back to point 0.1)
-    3.1- if no error: dispatch response to store and send additional get requests to remote server for fetching individual hero member information and dispatch to store ->(back to point 0.2)
+    3.1- if no error: dispatch response to store and send additional get requests to remote server 
+    for fetching individual hero member information and dispatch to store ->(back to point 0.2)
 ```
 ### Styling
 
