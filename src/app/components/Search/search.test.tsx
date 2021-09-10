@@ -1,7 +1,7 @@
 import { render, screen,fireEvent } from '@testing-library/react'
 import { Provider } from 'react-redux';
-import { store } from '../../app/store';
-import { Search } from './Search';
+import { store } from 'app/store';
+import { Search } from 'app/components/Search';
 
 const MockSearch = () => {
     return (

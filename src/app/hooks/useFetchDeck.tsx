@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import axios from "axios";
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
-import { updateDeckResponse, updateDeckHasError, updateDeckError, updateHeroCards, selectLotrDeck, emptyHeroCards } from "../slices/lotrDeckSlice";
+import { useAppSelector, useAppDispatch } from "app/hooks/hooks";
+import { updateDeckResponse, updateDeckHasError, updateDeckError, updateHeroCards, selectLotrDeck, emptyHeroCards } from "app/slices/lotrDeckSlice";
 
 export const useFetchDeck = () => {
 

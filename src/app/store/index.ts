@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import lotrDeckReducer from '../features/slices/lotrDeckSlice';
+import lotrDeckReducer from 'app/slices/lotrDeckSlice';
 
 export const store = configureStore({
   reducer: {

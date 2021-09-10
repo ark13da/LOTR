@@ -1,6 +1,6 @@
-import { Search } from "./features/search/Search"
-import { Deck } from "./features/deck/Deck"
-import "./App.css"
+import { Search } from "app/components/Search"
+import { Deck } from "app/components/Deck"
+import "app/components/App/App.css"
 
 function App() {
   return (

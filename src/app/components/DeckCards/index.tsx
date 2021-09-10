@@ -1,5 +1,5 @@
-import { deckCardsProps } from "../models/interfaces";
-import "./deckCard.css";
+import { deckCardsProps } from "app/models/interfaces";
+import "app/components/DeckCards/DeckCard.css";
 
 const DeckCards = (props: deckCardsProps) => {
   return (

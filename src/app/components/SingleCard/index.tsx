@@ -1,5 +1,5 @@
-import { heroCardprops } from "../models/interfaces";
-import "./singleCard.css";
+import { heroCardprops } from "app/models/interfaces";
+import "app/components/SingleCard/SingleCard.css";
 
 const SingleCard = ({
   name,

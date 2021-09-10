@@ -2,20 +2,20 @@
 
 [![The workflow](https://github.com/ark13da/LOTR/actions/workflows/main.yml/badge.svg)](https://github.com/ark13da/LOTR/actions/workflows/main.yml)
 
-#### Introduction
-#### The task
-#### Dependencies and Setup
-#### App architecture
-#### Testing
-#### Future development
-#### Notes and considerations
-#### Personal reflection 
+### Introduction
+### The task
+### Dependencies and Setup
+### App architecture
+### Testing
+### Future development
+### Notes and considerations
+### Personal reflection 
 
 
 ## Introduction
 
 This application was developed on Visma solutions' request as a coding exercise for the position of front end developer. 
-In this document I explain how the App was designed and set up. furthermore, I try to air my opinion about further development of this App along with my points of concerns. 
+In this document I explain how the App was designed and set up. Furthermore, I try to air my opinion about further development of this App along with my points of concerns. 
 The task description can be found under 'The task' section of this file. 
 
 
@@ -54,7 +54,7 @@ Redux store presents the single source of truth and all components only communic
 Redux actions, reducers, and selectors were created in a slice (redux toolkit standard). since the App is small, only a single slice named 'lotrDeckSlice' was created instead of one slice per component. this slice exports actions (for modifying the state) and a selector (for reading the state). thus, components look at this slice for either reading or modifying the state.
 
 The exceptions for above mentioned data flow pattern are 'DeckCards' and 'SingleCard' components:
-'Deck' component recieves data from the state and maps it 'DeckCards' to render multiple DeckCards.
+'Deck' component receives data from the state and maps it 'DeckCards' to render multiple DeckCards.
 'SingleCard' component is a more extensive view of already rendered components 'DeckCards', but is displayed only when DeckCard is clicked. 
 
 ### Fetching data from external server
@@ -66,19 +66,21 @@ A custom hook 'useFetchDeck' was designed send get requests to external server a
 - 0- The Deck components reads the store state:
     0.1- if state has error: displays user comprehensible error
     0.2- if no error: maps the data to DeckCards component and displays the cards
-        0.2.1- user clicks on one card: conditional JSX statement is triggered and 'SingleCard' component is displayed with properties of selected card
+        0.2.1- user clicks on one card: conditional JSX statement is triggered and 
+        'SingleCard' component is displayed with properties of selected card
 1- User enters an input in search box (inputElement) and presses 'Enter'
 2- Search component validates the input:
     2.1- if input is invalid: error is dispatched to store
-    2.2- if input is valid, search term si dispatched to store
+    2.2- if input is valid, search term is dispatched to store
 3- 'useFetchDeck' hook is triggered by any change to userInput property of store:
     3.1- if response has error: dispatch error to store ->(back to point 0.1)
-    3.1- if no error: dispatch response to store and send additional get requests to remote server for fetching individual hero member information and dispatch to store ->(back to point 0.2)
+    3.1- if no error: dispatch response to store and send additional get requests to remote server 
+    for fetching individual hero member information and dispatch to store ->(back to point 0.2)
 ```
 ### Styling
 
-plain CSS was used for styling the app. each component has its own style file in its directory
-I did not fully designed this app to be compatible with small mobile screens.
+I did not fully designed this app to be compatible with small mobile screens. Thus, plain CSS was used for styling the app. 
+Each component has its own style file in its directory.
 
 ## Testing
 
@@ -93,12 +95,12 @@ after unit tests, integration tests shall be developed to test interaction betwe
 
 ### HTML tags in fetched data
 
-some properties of the response object from remote server contain HTML tags. Due to XSS threats I chose to treat them as string eventhough they don't present a good view because I do not know nor fully trust the data provider.
+Some properties of the response object from remote server contain HTML tags. Due to XSS threats I chose to treat them as string even though they don't present a good view because I do not know nor fully trust the data provider.
 
 ### accessibility issues 
 
 I did not want to go against the wire-frame in my design however, the search box does not have a button which leaves us with questions. 
-I could either trigger the custom hook after each character change in the search field which would send lots of unncessary requests,
+I could either trigger the custom hook after each character change in the search field which would send lots of unnecessary requests,
 or I could define 'Enter' key press as the trigger which makes working with the app on mobile devices a problem.
 I chose the second option for development, but these matters shall be discussed with UX/UI team.
 
