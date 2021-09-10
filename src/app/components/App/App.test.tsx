@@ -1,7 +1,7 @@
 import { render} from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from 'app/store';
-import App from '.';
+import App from 'app/components/App';
 
 describe('Test App component rendering', () => {
   
