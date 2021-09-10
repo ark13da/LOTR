@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { useAppSelector } from "../../app/hooks";
-import { selectLotrDeck } from "../slices/lotrDeckSlice";
-import { useFetchDeck } from "../services/useFetchDeck";
-import DeckCards from "../deckCards/DeckCards";
-import SingleCard from "../singleCard/SingleCard";
-import { heroCardprops, heroCardInterface } from "../models/interfaces";
-import "./deck.css";
-
+import { useAppSelector } from "app/hooks/hooks";
+import { selectLotrDeck } from "app/slices/lotrDeckSlice";
+import { useFetchDeck } from "app/hooks/useFetchDeck";
+import DeckCards from "app/components/DeckCards";
+import SingleCard from "app/components/SingleCard";
+import { heroCardprops, heroCardInterface } from "app/models/interfaces";
+import "app/components/Deck/Deck.css";
 
 export const Deck = () => {
     // grants read access to state object

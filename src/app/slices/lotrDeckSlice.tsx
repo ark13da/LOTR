@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { RootState } from "../../app/store"
-import { lotrDeckState, heroCardInterface, deckResponse } from "../models/interfaces";
+import { RootState } from "app/store"
+import { lotrDeckState, heroCardInterface, deckResponse } from "app/models/interfaces";
 
 const initialState: lotrDeckState = {
   userInput: 13,

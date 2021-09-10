@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useAppDispatch } from "../../app/hooks";
-import "./search.css";
+import { useAppDispatch } from "app/hooks/hooks";
+import "app/components/Search/Search.css";
 import {
     updateUserInput,
     updateDeckError,
     updateDeckHasError,
-} from "../slices/lotrDeckSlice";
+} from "app/slices/lotrDeckSlice";
 
 export const Search = () => {
     const dispatch = useAppDispatch();
