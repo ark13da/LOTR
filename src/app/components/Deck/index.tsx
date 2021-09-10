@@ -77,7 +77,7 @@ export const Deck = () => {
                     defense={singleHeroProps!.defense}
                 />
             ) : (
-                <br />
+                <br/>
             )}
         </div>
     )
