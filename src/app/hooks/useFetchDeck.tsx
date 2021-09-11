@@ -1,7 +1,14 @@
 import { useEffect } from "react";
 import axios from "axios";
 import { useAppSelector, useAppDispatch } from "app/hooks/hooks";
-import { updateDeckResponse, updateDeckHasError, updateDeckError, updateHeroCards, selectLotrDeck, emptyHeroCards } from "app/slices/lotrDeckSlice";
+import {
+    updateDeckResponse,
+    updateDeckHasError,
+    updateDeckError,
+    updateHeroCards,
+    selectLotrDeck,
+    emptyHeroCards
+} from "app/slices/lotrDeckSlice";
 
 export const useFetchDeck = () => {
 
@@ -45,7 +52,6 @@ export const useFetchDeck = () => {
                 dispatch(updateDeckError("Failed to retrieve data!"));
             }
         })();
-        // silence the eslint because we only want our userinput dependency to trigger the effect
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [lotrDeck.userInput])
 };

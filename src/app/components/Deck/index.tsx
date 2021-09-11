@@ -4,7 +4,7 @@ import { selectLotrDeck } from "app/slices/lotrDeckSlice";
 import { useFetchDeck } from "app/hooks/useFetchDeck";
 import DeckCards from "app/components/DeckCards";
 import SingleCard from "app/components/SingleCard";
-import { heroCardprops, heroCardInterface } from "app/models/interfaces";
+import { heroCardInterface } from "app/models/interfaces";
 import "app/components/Deck/Deck.css";
 
 export const Deck = () => {
@@ -14,8 +14,7 @@ export const Deck = () => {
     // display switch fro single selected Hero card
     const [singleHeroDisplay, setSingleHeroDisplay] = useState<boolean>(false);
     // local state that holds information of single selected hero for singleCard component 
-    const [singleHeroProps, setSingleHeroProps] = useState<heroCardprops | null>(null);
-
+    const [singleHeroProps, setSingleHeroProps] = useState<heroCardInterface>();
 
 
     // custom hook that fetches the data from remote server and updates the state
@@ -23,10 +22,8 @@ export const Deck = () => {
 
     // opens single hero card by populating singleHeroProps state
     const openCard = (id: string): void => {
-        const heroObject: Array<any> = lotrDeck.deckHeroCards.filter(
-            (hero: heroCardInterface) => hero.code === id
-        );
-        setSingleHeroProps(heroObject[0]);
+        const heroObject = lotrDeck.deckHeroCards.find((hero: heroCardInterface) => hero.code === id);
+        setSingleHeroProps(heroObject);
         setSingleHeroDisplay(true);
     };
 
@@ -60,7 +57,7 @@ export const Deck = () => {
                     )
                 })}
             </div>
-            {singleHeroDisplay === true ? (
+            {singleHeroDisplay === true? (
                 <SingleCard
                     closeBtn={closeCard}
                     name={singleHeroProps!.name}
