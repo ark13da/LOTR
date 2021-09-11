@@ -7,9 +7,10 @@
 ### Dependencies and Setup
 ### App architecture
 ### Testing
-### Future development
 ### Notes and considerations
+### Future development
 ### Personal reflection 
+
 
 
 ## Introduction
@@ -17,6 +18,9 @@
 This application was developed on Visma solutions' request as a coding exercise for the position of front end developer. 
 In this document I explain how the App was designed and set up. Furthermore, I try to air my opinion about further development of this App along with my points of concerns. 
 The task description can be found under 'The task' section of this file. 
+
+The live version of the app can be found at https://awesome-sinoussi-0a4461.netlify.app/
+
 
 
 ## The task
@@ -30,6 +34,7 @@ Familiarize yourself with API documentation at https://ringsdb.com and create a 
 Use TypeScript for coding. You can use other libraries you'd prefer and styling can also be done by your preference. We hope that you try to show us your quality standards in the submission.
 
 Wireframe can be found from: https://www.figma.com/file/mg1loDP3Z7XjfF6fC60CL3/RingsDB-Wireframe
+
 
 
 ## Dependencies and Setup
@@ -79,8 +84,10 @@ A custom hook 'useFetchDeck' was designed send get requests to external server a
 ```
 ### Styling
 
-I did not fully designed this app to be compatible with small mobile screens. Thus, plain CSS was used for styling the app. 
+I did not fully design this app to be compatible with small mobile screens and no animation or transition was added needed. Thus, the styling scale was fairly small and plain CSS was used. 
 Each component has its own style file in its directory.
+
+
 
 ## Testing
 
@@ -89,9 +96,21 @@ same type of tests shall be written for all components and services.
 after unit tests, integration tests shall be developed to test interaction between components.
 
 
-## Future development
 
 ## Notes and considerations
+
+### Deck displayed on first load
+
+I have only used public APIs and no private API keys in this project. as a result, the App does not have access to all deck Ids. some deck Ids that work upon search are [13,16,25,26], and deck Id 9 results in 'You are not allowed to view this deck' error.
+
+The API provider has made it possible to send them an email and request credentials to access all decks upon explaining the reason for such request, but I did not make a request because I think the key points of this excercise are met without having access to all decks.
+
+### API key
+
+I have only used public APIs and no private API keys in this project. as a result, the App does not have access to all deck Ids. some deck Ids that work upon search are [13,16,25,26], and deck Id 9 results in 'You are not allowed to view this deck' error.
+
+The API provider has made it possible to send them an email and request credentials to access all decks upon explaining the reason for such request, but I did not make a request because I think the key points of this exercise are met without having access to all decks.
+
 
 ### HTML tags in fetched data
 
@@ -104,6 +123,22 @@ I could either trigger the custom hook after each character change in the search
 or I could define 'Enter' key press as the trigger which makes working with the app on mobile devices a problem.
 I chose the second option for development, but these matters shall be discussed with UX/UI team.
 
+
+
+## Future development
+
+- Obtain private API key to access more decks
+- Make the app more mobile friendly
+- Unit tests for all components
+- Integration tests
+- Dealing with HTML tags in API response either by trusting the data provider or by sanitizing the tags off text fields
+- Dealing with accessibility issue of search box
+- Adding transition and animation to elements for more pleasant user experience
+
+
+
 ## Personal reflection 
 
-
+This task was fun! I enjoyed working with game cards and it gave me good inspiration for design. 
+My focus on this exercise was to create an app with simple architecture, straightforward data model, small and testable components. 
+The biggest limitation was time and it forced me to make compromises such as not having a good testing coverage, not obtaining private API key, not dealing with service worker, and not sanitizing the data (HTML tags in response). 
