@@ -141,5 +141,4 @@ I chose the second option for development, but these matters shall be discussed 
 
 This task was fun! I enjoyed working with game cards and it gave me good inspiration for design. 
 My focus on this exercise was to create an app with simple architecture, straightforward data model, small and testable components. 
-The biggest limitation was time and it forced me to make compromises such as not having a good testing coverage, not obtaining private API key, not dealing with service worker, and not sanitizing the data (HTML tags in response).
-Although I would need to improve myself in multiple areas, My immediate development area would be in learning more about service worker and advanced testing in forexample Redux, React-redux, hooks, and integrations. 
+The biggest limitation was time and it forced me to make compromises such as not having a good testing coverage, not obtaining private API key, not dealing with service worker, and not sanitizing the data (HTML tags in response). 
