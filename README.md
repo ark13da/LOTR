@@ -19,6 +19,8 @@ This application was developed on Visma solutions' request as a coding exercise 
 In this document I explain how the App was designed and set up. Furthermore, I try to air my opinion about further development of this App along with my points of concerns. 
 The task description can be found under 'The task' section of this file. 
 
+The live version of the app can be found at https://awesome-sinoussi-0a4461.netlify.app/
+
 
 
 ## The task
@@ -140,4 +142,4 @@ I chose the second option for development, but these matters shall be discussed 
 This task was fun! I enjoyed working with game cards and it gave me good inspiration for design. 
 My focus on this exercise was to create an app with simple architecture, straightforward data model, small and testable components. 
 The biggest limitation was time and it forced me to make compromises such as not having a good testing coverage, not obtaining private API key, not dealing with service worker, and not sanitizing the data (HTML tags in response).
-My development area is learning more about service worker and advanced tests e.g. testing Redux, React-redux, hooks, and integrations. 
+Although I would need to improve myself in multiple areas, My immediate development area would be in learning more about service worker and advanced testing in forexample Redux, React-redux, hooks, and integrations. 

@@ -25,9 +25,9 @@ const SingleCard = ({
           </button>
         </div>
         <div className="singleCardContent">
-          <div className="singleCardImg">
+          <div>
             <img
-              className="deckCardImg"
+              className="singleCardImg"
               src={`https://ringsdb.com/${imagesrc}`}
               alt="Hero"
             />
