@@ -59,4 +59,4 @@ const SingleCard = ({
   )
 }
 
-export default SingleCard
+export default SingleCard;

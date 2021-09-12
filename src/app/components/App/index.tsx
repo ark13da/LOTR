@@ -1,5 +1,5 @@
-import { Search } from "app/components/Search"
-import { Deck } from "app/components/Deck"
+import Search from "app/components/Search"
+import Deck from "app/components/Deck"
 import "app/components/App/App.css"
 
 function App() {

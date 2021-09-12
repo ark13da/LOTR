@@ -7,7 +7,7 @@ import SingleCard from "app/components/SingleCard";
 import { heroCardInterface } from "app/models/interfaces";
 import "app/components/Deck/Deck.css";
 
-export const Deck = () => {
+const Deck = () => {
     // grants read access to state object
     const lotrDeck = useAppSelector(selectLotrDeck);
 
@@ -79,3 +79,5 @@ export const Deck = () => {
         </div>
     )
 }
+
+export default Deck;

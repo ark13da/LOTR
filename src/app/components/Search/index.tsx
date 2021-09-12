@@ -7,7 +7,7 @@ import {
     updateDeckHasError,
 } from "app/slices/lotrDeckSlice";
 
-export const Search = () => {
+const Search = () => {
     const dispatch = useAppDispatch();
     const [userInput, setUserInput] = useState<string>("");
     const inputHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -41,3 +41,5 @@ export const Search = () => {
         </div>
     )
 };
+
+export default Search;
