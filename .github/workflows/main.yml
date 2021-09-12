@@ -9,23 +9,22 @@ on:
       - master
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      
+
       # initializing
       - name: Initiation message
-        run: echo preparing to install
+        run: echo preparing to install and analyse
 
       # Installing
       - name: Installing
         run: npm install
-      
+
       # Testing
       - name: Testing
         run: npm run test
@@ -36,4 +35,4 @@ jobs:
 
       # Confirmation
       - name: Confirming
-        run: echo all done!
+        run: echo all done! Looking good!

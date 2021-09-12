@@ -13,7 +13,7 @@
 }
 
 .singleCard {
-  background-image: url("https://source.unsplash.com/3gifzboyZk0");
+  background-image: url('https://source.unsplash.com/3gifzboyZk0');
   width: 65%;
   border-radius: 20px;
   padding: 30px;

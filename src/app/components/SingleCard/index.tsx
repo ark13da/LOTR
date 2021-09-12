@@ -1,5 +1,5 @@
-import { heroCardprops } from "app/models/interfaces";
-import "app/components/SingleCard/SingleCard.css";
+import { HeroCardpropsIntf } from 'app/models/interfaces';
+import 'app/components/SingleCard/SingleCard.css';
 
 const SingleCard = ({
   name,
@@ -14,23 +14,19 @@ const SingleCard = ({
   attack,
   defense,
   health,
-}: heroCardprops) => {
+}: HeroCardpropsIntf) => {
   return (
     <div className="overLay">
       <div className="singleCard">
         <div className="singleCardHeader">
           <p className="titleText">{name}</p>
-          <button className="closeBtn" onClick={() => closeBtn()}>
+          <button className="closeBtn" onClick={closeBtn}>
             &#x2716;
           </button>
         </div>
         <div className="singleCardContent">
           <div>
-            <img
-              className="singleCardImg"
-              src={`https://ringsdb.com/${imagesrc}`}
-              alt="Hero"
-            />
+            <img className="singleCardImg" src={`https://ringsdb.com/${imagesrc}`} alt="Hero" />
           </div>
           <div className="singleCardStats">
             <div className="cardInfoSection">
@@ -56,7 +52,7 @@ const SingleCard = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SingleCard
+export default SingleCard;

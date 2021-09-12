@@ -1,19 +1,12 @@
-import { deckCardsProps } from "app/models/interfaces";
-import "app/components/DeckCards/DeckCard.css";
+import { DeckCardsPropsIntf } from 'app/models/interfaces';
+import 'app/components/DeckCards/DeckCard.css';
 
-const DeckCards = (props: deckCardsProps) => {
+const DeckCards = ({ code, openCard, imagesrc }: DeckCardsPropsIntf) => {
   return (
-    <div
-      className="deckCard"
-      onClick={() => props.openCard(props.code)}
-    >
-      <img
-        className="deckCardImg"
-        src={`https://ringsdb.com/${props.imagesrc}`}
-        alt="Hero"
-      />
+    <div className="deckCard" id={code} onClick={openCard}>
+      <img className="deckCardImg" src={`https://ringsdb.com/${imagesrc}`} alt="Hero" />
     </div>
-  )
-}
+  );
+};
 
-export default DeckCards
+export default DeckCards;
