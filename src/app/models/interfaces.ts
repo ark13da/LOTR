@@ -1,6 +1,6 @@
 export interface DeckResponseIntf {
   name?: string;
-  heroes?: { [key: string]: number; };
+  heroes?: { [key: string]: number };
 }
 
 export interface DeckCardsPropsIntf {

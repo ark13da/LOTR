@@ -1,5 +1,5 @@
-import { HeroCardpropsIntf } from 'app/models/interfaces'
-import 'app/components/SingleCard/SingleCard.css'
+import { HeroCardpropsIntf } from 'app/models/interfaces';
+import 'app/components/SingleCard/SingleCard.css';
 
 const SingleCard = ({
   name,
@@ -52,7 +52,7 @@ const SingleCard = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SingleCard
+export default SingleCard;

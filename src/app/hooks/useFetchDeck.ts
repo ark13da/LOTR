@@ -16,7 +16,7 @@ export const useFetchDeck = () => {
 
   // fetch deck and heros data and upate the state each time user enters new search term
   useEffect(() => {
-    ; (async () => {
+    (async () => {
       const customDeckUrl = lotrDeck.deckBaseUrl + lotrDeck.userInput + lotrDeck.deckResponseFormat;
       try {
         const deckRes = await axios.get(customDeckUrl);
@@ -34,7 +34,7 @@ export const useFetchDeck = () => {
           // fetch individual heros:
           const heros = Object.keys(deckRes.data.heroes);
           heros.forEach((hero) => {
-            ; (async () => {
+            (async () => {
               try {
                 const customHeroUrl =
                   lotrDeck.HeroCardBaseUrl + hero + lotrDeck.HeroCardResponseFormat;
