@@ -1,20 +1,18 @@
-.deckContainer{
-   width:100%;
+.deckContainer {
+  width: 100%;
 }
 
-.cardsContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.deckTiltleText{
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    color:gold;
-    letter-spacing: 2px;
-    text-shadow:1px 1px rgb(66, 33, 33);
+.deckTiltleText {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: gold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px rgb(66, 33, 33);
 }
-
-

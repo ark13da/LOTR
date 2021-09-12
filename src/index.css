@@ -5,13 +5,10 @@ body {
   font-family: 'Philosopher', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://source.unsplash.com/DD0fKMPg8ZA");
+  background-image: url('https://source.unsplash.com/DD0fKMPg8ZA');
   background-size: cover;
- 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
