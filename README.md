@@ -10,7 +10,11 @@
 
 ### App architecture
 
+### Formatting
+
 ### Testing
+
+### Continuous integration
 
 ### Notes and considerations
 
@@ -90,11 +94,19 @@ A custom hook 'useFetchDeck' was designed send get requests to external server a
 I did not fully design this app to be compatible with small mobile screens and no animation or transition was added needed. Thus, the styling scale was fairly small and plain CSS was used.
 Each component has its own style file in its directory.
 
+## Formatting
+
+TSLint and Prettier where configured and used for formatting the code. The code was linted before every commit.
+
 ## Testing
 
 React testing library was used for unit testing the components at a small scale of only 'Search' component due to time constraint.
 same type of tests shall be written for all components and services.
 after unit tests, integration tests shall be developed to test interaction between components.
+
+## Continuous integration
+
+Github actions are used for CI. Upon every push to either master or feature branch and on pull request on master branch, the workflow is triggered and a number of commands such as (install, test, and build) are run to ensure integrity of the codebase. You can see a badge at the top of README file showing the status of the workflow.
 
 ## Notes and considerations
 
@@ -126,9 +138,9 @@ I chose the second option for development, but these matters shall be discussed 
 - Break the 'useFetchDeck' hook in to smaller and more unit testable modules.
 - Obtain private API key to access more decks.
 - Make the app more mobile friendly.
-- Unit tests for all components.
+- Unit tests for all components and modules.
 - Integration tests.
-- Dealing with HTML tags in API response either by trusting the data provider or by sanitizing the tags off text fields.
+- Dealing with HTML tags in API response either by trusting the data provider or by sanitizing the fields.
 - Dealing with accessibility issue of search box.
 - Adding transition and animation to elements for more pleasant user experience.
 - designing a proper service worker for better performance.
@@ -137,4 +149,4 @@ I chose the second option for development, but these matters shall be discussed 
 
 This task was fun! I enjoyed working with game cards and it gave me good inspiration for design.
 My focus on this exercise was to create an app with simple architecture, straightforward data model, small and testable components.
-The biggest limitation was time and it forced me to make compromises such as not breaking 'useFetchDeck' hook to smaller modules, not having a good test coverage, not obtaining private API key, not dealing with service worker, and not sanitizing the data (HTML tags in response).
+The task itself can be done in short amount of time, but trying to apply decent quality standards can introduce many small details that will increase the development time. Thus, the biggest limitation was time and it forced me to make some compromises which are reflected in 'Future development' section which I shall attend to later.
