@@ -149,4 +149,4 @@ I chose the second option for development, but these matters shall be discussed 
 
 This task was fun! I enjoyed working with game cards and it gave me good inspiration for design.
 My focus on this exercise was to create an app with simple architecture, straightforward data model, small and testable components.
-The task itself can be done in short amount of time, but trying to apply decent quality standards can introduce many small details that will increase the development time. Thus, the biggest limitation was time and it forced me to make some compromises which are reflected in 'Future development' section which I shall attend to later.
+The task itself can be done in short amount of time, but trying to apply decent quality standards can introduce many small details that will increase the development time. Thus, the biggest limitation was time and it forced me to make some compromises which are reflected in 'Future development' section which I shall tend to later.
