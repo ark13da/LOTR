@@ -24,7 +24,7 @@
 
 ## Introduction
 
-This application was developed on Visma solutions' request as a coding exercise for the position of front end developer.
+This is a front-end only application developed as per requirements of the task mentioned below.
 In this document I explain how the App was designed and set up. Furthermore, I try to air my opinion about further development of this App along with my points of concerns.
 The task description can be found under 'The task' section of this file.
 
@@ -39,9 +39,7 @@ Familiarize yourself with API documentation at https://ringsdb.com and create a 
 - when user clicks on a card, the user can see the detailed information on the card,
 - in the detailed informations, a modernized version for the card is displayed (a Card element), that should have the values of the card displayed similarly to the picture of the card
 
-Use TypeScript for coding. You can use other libraries you'd prefer and styling can also be done by your preference. We hope that you try to show us your quality standards in the submission.
-
-Wireframe can be found from: https://www.figma.com/file/mg1loDP3Z7XjfF6fC60CL3/RingsDB-Wireframe
+Use TypeScript for coding.
 
 ## Dependencies and Setup
 
